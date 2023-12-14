@@ -79,6 +79,7 @@ li {
   padding-left: 40px;
   padding-right: 40px;
   margin: 0 auto;
+  margin-bottom: 96px;
 }
 .promotion .center-container {
   display: flex;
@@ -134,7 +135,6 @@ li {
   font-size: 50px;
   line-height: 62.5px;
   color: #292F36;
-  margin-bottom: -15px;
 }
 .projects__subtitle {
   max-width: 737px;
@@ -323,7 +323,7 @@ li {
   min-width: 25%;
 }
 .footer__nav-header {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-size: 25px;
   line-height: 31px;
   color: #292F36;
@@ -332,6 +332,9 @@ li {
   display: flex;
   flex-direction: column;
   padding: 0;
+}
+.footer__nav-item {
+  padding-bottom: 40px;
 }
 .footer__nav-link {
   color: #4D5053;
@@ -816,4 +819,90 @@ li {
 }
 .pagination__item svg {
   margin-left: 3px;
+}
+
+.slider {
+  position: relative;
+  max-width: 1240px;
+  max-height: 800px;
+  margin: 0 auto 220px;
+  padding: 0 20px;
+}
+.slider__item {
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.slider__item::before {
+  content: url("./img/Zoom-Icon.svg");
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: calc(50% - 66px);
+  top: calc(50% - 66px);
+  width: 132px;
+  height: 132px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+.slider__item:hover::before {
+  opacity: 1;
+}
+.slider__item img {
+  border-radius: 70px;
+}
+.slider__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.slider__pagination-item {
+  height: 25px;
+  width: 25px;
+  background-color: inherit;
+  border-radius: 100px;
+  border: 3px solid black;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.project-details-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.project-details-content__title {
+  margin-bottom: 11px;
+  max-width: 685px;
+  font-size: 50px;
+  line-height: 62px;
+  letter-spacing: 0.02em;
+}
+.project-details-content__text {
+  max-width: 685px;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+}
+.project-details-content__text:not(:last-child) {
+  margin-bottom: 40px;
+}
+.project-details-content__text:last-child {
+  margin-bottom: 100px;
+}
+
+.baner {
+  background-image: url(img/sliderBanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 351px;
+  margin-bottom: 200px;
 }/*# sourceMappingURL=style.css.map */

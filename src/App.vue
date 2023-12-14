@@ -1,24 +1,25 @@
 <template>
   <div id="app">
-    <PageHeader />
+    <!-- <PageHeader />
     <ProjectPromo />
     <ProjectContent />
-    <PageFooter />
+    <PageFooter /> -->
+    <router-view/>
+    <router/>
   </div>
 </template>
 
 <script>
-import PageFooter from './components/PageFooter.vue'
-import PageHeader from './components/PageHeader.vue'
-import ProjectContent from './components/ProjectContent.vue'
-import ProjectPromo from './components/ProjectPromo.vue'
+import router from './router'
+
+// import PageFooter from './components/PageFooter.vue'
+// import PageHeader from './components/PageHeader.vue'
+// import ProjectContent from './components/ProjectContent.vue'
+// import ProjectPromo from './components/ProjectPromo.vue'
 export default {
   name: 'App',
   components: {
-    PageFooter,
-    PageHeader,
-    ProjectContent,
-    ProjectPromo
+    router
   }
 }
 </script>

@@ -18,9 +18,9 @@
                         <h3 class="project-card__title">Modern Kitchan</h3>
                         <p class="project-card__subtitle">Decor / Artchitecture</p>
                     </div>
-                    <a class="project-card__link" href="#">
+                    <router-link class="project-card__link" to="/blogslider">
                         <img class="project-card__icon" src="img/Vector_galochka.svg" alt="link">
-                    </a>
+                    </router-link>
                 </div>
             </div>
             <div class="project-card">
@@ -30,9 +30,9 @@
                         <h3 class="project-card__title">Modern Kitchan</h3>
                         <p class="project-card__subtitle">Decor / Artchitecture</p>
                     </div>
-                    <a class="project-card__link" href="#">
+                    <router-link class="project-card__link" to="/blogslider">
                         <img class="project-card__icon" src="img/Vector_galochka.svg" alt="link">
-                    </a>
+                    </router-link>
                 </div>
             </div>
             <div class="project-card">
@@ -42,9 +42,9 @@
                         <h3 class="project-card__title">Modern Kitchan</h3>
                         <p class="project-card__subtitle">Decor / Artchitecture</p>
                     </div>
-                    <a class="project-card__link" href="#">
+                    <router-link class="project-card__link" to="/blogslider">
                         <img class="project-card__icon" src="img/Vector_galochka.svg" alt="link">
-                    </a>
+                    </router-link>
                 </div>
             </div>
             <div class="project-card">
@@ -54,9 +54,9 @@
                         <h3 class="project-card__title">Modern Kitchan</h3>
                         <p class="project-card__subtitle">Decor / Artchitecture</p>
                     </div>
-                    <a class="project-card__link" href="#">
+                    <router-link class="project-card__link" to="/blogslider">
                         <img class="project-card__icon" src="img/Vector_galochka.svg" alt="link">
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </div>

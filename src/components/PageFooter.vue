@@ -1,9 +1,9 @@
 <template>
     <footer class="footer">
         <div class="footer__social">
-            <a href="#" class="footer__logo">
-                <img src="img/LogoInterno.svg" alt="logo" class="footer__logo-img">
-            </a>
+            <router-link class="footer__logo" to="/">
+            <img class="header__logo" src="img/LogoInterno.svg" alt="logo">
+        </router-link>
             <p class="footer__social-text">It is a long established fact that a reader will be distracted lookings.
             </p>
             <div class="footer__social-items">
@@ -25,13 +25,13 @@
             <h2 class="footer__nav-header">Pages</h2>
             <ul class="footer__nav-list">
                 <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link">Home</a>
+                    <router-link class="main-nav__link" to="/">Home</router-link>
                 </li>
                 <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link">Project</a>
+                    <router-link class="main-nav__link" to="/pageproject">Project</router-link>
                 </li>
                 <li class="footer__nav-item">
-                    <a href="#" class="footer__nav-link">Blog</a>
+                    <router-link class="main-nav__link" to="/pageblog">Blog</router-link>
                 </li>
             </ul>
         </nav>

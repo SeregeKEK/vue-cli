@@ -17,13 +17,13 @@
                 </div>
                 <div class="latest-card__content-bottom">
                     <time datetime="2022-12-26" class="latest-card__date">26 December,2022</time>
-                    <a href="#" class="latest-card__link">
+                    <router-link class="latest-card__link" to="/pageblog-details">
                         <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.7715 14.9529L7.71435 8.26717L1.7715 1.58145" stroke="#292F36"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </article>

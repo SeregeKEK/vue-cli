@@ -1,18 +1,20 @@
 <template>
     <header class="header">
-        <a href="#" class="header__logo">
+        <router-link class="header__logo" to="/">
             <img class="header__logo" src="img/LogoInterno.svg" alt="logo">
-        </a>
+        </router-link>
         <nav class="main-nav">
-            <a class="main-nav__link" href="#">Home</a>
-            <a class="main-nav__link" href="#">Project</a>
-            <a class="main-nav__link" href="#">Blog</a>
+            <router-link class="main-nav__link" to="/">Home</router-link>
+            <router-link class="main-nav__link" to="/pageproject">Project</router-link>
+            <router-link class="main-nav__link" to="/pageblog">Blog</router-link>
         </nav>
     </header>
 </template>
 
 <script>
+import router from '@/router'
 export default {
-  name: 'PageHeader'
+  name: 'PageHeader',
+  router
 }
 </script>

@@ -38,6 +38,7 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
   name: 'ProjectContent',
 
@@ -175,6 +176,7 @@ export default {
   },
 
   methods: {
+    ...mapMutations(['CARDS']),
     selectTag (tag) {
       if (this.currentTagButton) {
         this.currentTagButton.target.classList.remove('project-content__tag--active')
