@@ -553,8 +553,9 @@ li {
   gap: 52px;
 }
 
-.blog-content {
+.blog-content__left {
   display: flex;
+  flex-direction: column;
 }
 .blog-content__kitchen {
   display: flex;
@@ -751,6 +752,21 @@ li {
 
 .project-card {
   grid-row: span 2;
+  position: relative;
+  width: 585px;
+}
+.project-card__star {
+  right: 5px;
+  top: 5px;
+  position: absolute;
+  stroke-linecap: round;
+  stroke: #FFA928;
+  cursor: pointer;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.4));
+}
+.project-card__star--selected {
+  fill: #FFA928;
+  stroke: transparent;
 }
 .project-card--big {
   grid-row: span 3;
@@ -822,14 +838,14 @@ li {
 }
 
 .slider {
-  position: relative;
   max-width: 1240px;
   max-height: 800px;
   margin: 0 auto 220px;
   padding: 0 20px;
 }
 .slider__item {
-  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -845,7 +861,6 @@ li {
   width: 132px;
   height: 132px;
   border-radius: 100%;
-  background-color: #fff;
   transition: all 0.5s;
 }
 .slider__item:hover::before {
@@ -853,13 +868,19 @@ li {
 }
 .slider__item img {
   border-radius: 70px;
+  width: 100%;
 }
-.slider__pagination {
+
+.tns-nav {
+  position: absolute;
   display: flex;
   justify-content: center;
   gap: 15px;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
-.slider__pagination-item {
+.tns-nav button {
   height: 25px;
   width: 25px;
   background-color: inherit;
@@ -867,6 +888,16 @@ li {
   border: 3px solid black;
   font-size: 0;
   cursor: pointer;
+}
+
+.tns-outer {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 70px;
+}
+
+.tns-visually-hidden {
+  display: none;
 }
 
 .project-details-content {
@@ -905,4 +936,9 @@ li {
   background-position: center;
   height: 351px;
   margin-bottom: 200px;
+}
+
+.tags__btn_activ {
+  background-color: #292F36;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

@@ -631,7 +631,11 @@ li {
 }
 
 .blog-content {
-  display: flex;
+  
+  &__left{
+    display: flex;
+    flex-direction: column;
+  }
 
   &__kitchen {
     display: flex;
@@ -860,6 +864,23 @@ li {
 
 .project-card {
   grid-row: span 2;
+  position: relative;
+  width: 585px;
+  
+  &__star{
+    right: 5px;
+    top: 5px;
+    position: absolute;
+    stroke-linecap: round;
+    stroke: #FFA928;
+    cursor: pointer;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.4));
+
+    &--selected{
+      fill: #FFA928;
+      stroke: transparent;
+    }
+  }
 
   &--big {
       grid-row: span 3;
@@ -944,16 +965,16 @@ li {
 
 
 .slider {
-  position: relative;
   max-width: 1240px;
   max-height: 800px;
   margin: 0 auto 220px;
   padding: 0 20px;
 
   &__item {
-      margin-bottom: 20px;
-      transition: all .5s;
-      cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
 
       &::before {
           content: url('./img/Zoom-Icon.svg');
@@ -967,7 +988,6 @@ li {
           width: 132px;
           height: 132px;
           border-radius: 100%;
-          background-color: #fff;
           transition: all .5s;
       }
 
@@ -977,16 +997,21 @@ li {
 
       & img {
           border-radius: 70px;
+          width: 100%;
       }
   }
+}
 
-  &__pagination {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-  }
+.tns-nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
 
-  &__pagination-item {
+  & button {
       height: 25px;
       width: 25px;
       background-color: inherit;
@@ -995,6 +1020,16 @@ li {
       font-size: 0;
       cursor: pointer;
   }
+}
+
+.tns-outer{
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 70px;
+}
+
+.tns-visually-hidden{
+  display: none;
 }
 
 .project-details-content {
@@ -1037,4 +1072,11 @@ li {
   background-position: center;
   height: 351px;
   margin-bottom: 200px;
+}
+
+.tags{
+  &__btn_activ{
+    background-color: #292F36;
+    color: white;
+  }
 }
