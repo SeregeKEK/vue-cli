@@ -82,12 +82,12 @@ export default {
           id: 1,
           tag: 'Kitchen',
           header: 'Let’s Get Solution for Building Construction Work',
-          imgSrc: 'styles/img/blog-details/blog-details-card1.jpg',
+          imgSrc: 'img/Image_tag1.png',
           dateText: '26 December,2022',
           breadcrumbs: 'Interior / Home / Decore',
           blockquote: 'The details are not the details.<br>They make the design.',
           subheader: 'Design sprints are great',
-          subImgSrc: 'styles/img/blog-details/blog-details-card2.jpg'
+          subImgSrc: 'img/Image_tag2.png'
         },
         {
           id: 2,
